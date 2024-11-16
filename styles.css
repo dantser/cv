@@ -30,6 +30,13 @@ header p {
     color: #666;
 }
 
+header .short-description {
+    font-size: 1em;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
 .social-links {
     margin-top: 10px;
 }
