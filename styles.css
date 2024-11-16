@@ -30,21 +30,33 @@ header p {
     color: #666;
 }
 
-header h2 {
-    margin-top: 20px;
-    font-size: 1.5em;
-    color: #0078D7;
+.social-links {
+    margin-top: 10px;
 }
 
-section {
-    margin-bottom: 20px;
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #0078D7;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-right: 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056a3;
+    transform: scale(1.1);
+}
+
+.social-links i {
+    font-size: 1.5em;
 }
 
 section h2 {
     color: #0078D7;
-    border-bottom: 2px solid #0078D7;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 ul {
@@ -67,16 +79,4 @@ ul.skills li {
     color: #0078D7;
     font-weight: bold;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Стили для ссылок */
-a {
-    color: #0078D7;
-    text-decoration: none;
-    transition: color 0.3s, text-shadow 0.3s;
-}
-
-a:hover {
-    color: #0056a3;
-    text-shadow: 0px 0px 10px rgba(0, 87, 163, 0.5);
 }
