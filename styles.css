@@ -1,90 +1,82 @@
-/* Основные стили */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background: #f7f7f7;
     color: #333;
-    background: #f9f9f9;
+}
+
+.resume {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header {
-    background: #0078D7;
-    color: white;
     text-align: center;
-    padding: 20px;
+    margin-bottom: 20px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 header p {
     margin: 5px 0;
+    color: #666;
 }
 
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+header h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #0078D7;
 }
 
-.section {
+section {
     margin-bottom: 20px;
 }
 
-.section h2 {
-    font-size: 1.5em;
+section h2 {
     color: #0078D7;
     border-bottom: 2px solid #0078D7;
     padding-bottom: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 ul {
+    margin: 0;
     padding-left: 20px;
 }
 
-ul li {
-    margin-bottom: 10px;
+ul.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
+ul.skills li {
+    background: #e0f7ff;
     padding: 10px;
-    background: #333;
-    color: white;
-}
-
-/* Навыки с голубым фоном */
-.skills div {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 15px;
-    background: #E0F7FF;
-    border-radius: 20px;
+    border-radius: 5px;
     color: #0078D7;
     font-weight: bold;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    border: 1px solid #B0E3FF;
 }
 
-/* Ссылки */
-.contacts a {
+/* Стили для ссылок */
+a {
     color: #0078D7;
     text-decoration: none;
-    font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    transition: color 0.3s, text-shadow 0.3s;
 }
 
-.contacts a:hover {
-    text-decoration: underline;
+a:hover {
+    color: #0056a3;
+    text-shadow: 0px 0px 10px rgba(0, 87, 163, 0.5);
 }
